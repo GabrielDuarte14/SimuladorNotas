@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Notas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Simulador de notas</span>
+    </header>
+    <div class="subt">
+      <span class="subtSp">Quer saber se passou ou não de semestre com base nas AC's?</span>
+      <div class="form">
+          <div class="select">
+        <span class="pergunta"> Qual foi a última AC que você fez?
+        </span>
+          <select id="acs" onchange="apareceAcs()">
+              <option value="0">Selecione</option>
+              <option value="AC1">AC1</option>
+              <option value="AC2">AC2</option>
+              <option value="AC3">AC3</option>
+            </select>
+        </div>
+        <div class="campo" id="campoac1">
+          <label>Nota AC1: </label>
+          <input type="text" id="ac1"/>
+        </div>
+        <div class="campo" id="campoac2">
+            <label>Nota AC2: </label>
+            <input type="text" id="ac2"/>
+          </div>
+          <div class="campo" id="campoac3">
+            <label>Nota AC3: </label>
+            <input type="text" id="ac3"/>
+          </div>
+          <div id="resposta"></div>
+          <button onclick="calcular()">Calcular</button>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
