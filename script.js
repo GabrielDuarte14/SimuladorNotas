@@ -17,6 +17,11 @@ function apareceAcs(){
         campoac2.style.display = 'block'
         campoac3.style.display = 'block'
         selectAC = 3;
+    }else{
+        campoac1.style.display = 'none'
+        campoac2.style.display = 'none'
+        campoac3.style.display = 'none'
+        selectAC = 0;
     }
 }
 
