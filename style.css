@@ -94,7 +94,7 @@ button{
     border-radius: 15px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     .subt .form{
         width: 80%;
     }
