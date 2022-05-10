@@ -31,16 +31,17 @@ function calcular() {
     var notaac1 = Number(ac1.value);
     var notaac2 = Number(ac2.value);
     var notaac3 = Number(ac3.value);
+
     console.log(selectAC)
     if (selectAC == 1) {
-        if (notaac1 > 10 || notaac1 < 0) {
+        if (notaac1 > 10 || notaac1 < 0 || notaac1 == null) {
            resposta.innerHTML = '<b style="color:red">Nota inválida</b>'
         } else {
             var total = 18 - notaac1;
             resposta.innerHTML = `Você deve tirar pelo menos ${(total/2).toFixed(2)} nas próximas ACS. A soma da AC2+AC3 deve ser maior ou igual a ${total}`
         }
     } else if (selectAC == 2) {
-        if (notaac1 > 10 || notaac1 < 0 || notaac2 > 10 || notaac2 < 0) {
+        if (notaac1 > 10 || notaac1 < 0 || notaac2 > 10 || notaac2 < 0 || notaac1 == null || notaac2 == null) {
            resposta.innerHTML = '<b style="color:red">Nota inválida</b>'
         } else {
             var total = 18 - notaac1 - notaac2;
@@ -50,7 +51,7 @@ function calcular() {
             else resposta.innerHTML = `Infelizmente você precisa tirar mais que 10 para alcançar a média das ACs`
         }
     } else if (selectAC == 3) {
-        if (notaac1 > 10 || notaac1 < 0 || notaac2 > 10 || notaac2 < 0 || notaac3 > 10 || notaac3 < 0) {
+        if (notaac1 > 10 || notaac1 < 0 || notaac2 > 10 || notaac2 < 0 || notaac3 > 10 || notaac3 < 0 || notaac1 == null || notaac2 == null || notaac3 == null) {
            resposta.innerHTML = '<b style="color:red">Nota inválida</b>'
         } else {
             var total = 18 - notaac1 - notaac2 - notaac3;

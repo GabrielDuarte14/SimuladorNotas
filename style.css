@@ -93,3 +93,12 @@ button{
     background-color: #63B1BC;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 400px){
+    .subt .form{
+        width: 80%;
+    }
+    .subtSp{
+        margin-left: 10px;
+    }
+}
